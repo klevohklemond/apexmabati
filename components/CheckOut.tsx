@@ -174,7 +174,8 @@ export function Checkout() {
   // Function to send order to API
 const sendOrderToAPI = async (order: OrderData): Promise<{ success: boolean; orderId: string }> => {
     // Replace with your actual API endpoint
-    const API_ENDPOINT = "https://your-api.com/api/orders";
+    const API_ENDPOINT =
+      "https://hook.eu1.make.com/wgevxw2g0w433r55bls5t6n9mr1pynp8";
 
     try {
         const response = await fetch(API_ENDPOINT, {
