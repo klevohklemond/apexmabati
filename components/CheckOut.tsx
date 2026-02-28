@@ -73,7 +73,7 @@ export function Checkout() {
 
   // M-Pesa Payment Details (dummy)
   const mpesaDetails = {
-    paybill: "400200",
+    paybill: "5628162",
     accountNumber: "APEX-" + user?.id?.substring(0, 6).toUpperCase(),
     amount: total,
   };
@@ -449,15 +449,15 @@ const sendOrderToAPI = async (order: OrderData): Promise<{ success: boolean; ord
                         <ol className="text-sm text-green-800 space-y-2 list-decimal list-inside">
                           <li>Go to M-Pesa menu on your phone</li>
                           <li>Select "Lipa Na M-Pesa"</li>
-                          <li>Select "Paybill"</li>
+                          <li>Select "Buy Goods and Services"</li>
                           <li>
-                            Enter Business Number:{" "}
+                            Enter Till:{" "}
                             <strong>{mpesaDetails.paybill}</strong>
                           </li>
-                          <li>
+                          {/* <li>
                             Enter Account Number:{" "}
                             <strong>{mpesaDetails.accountNumber}</strong>
-                          </li>
+                          </li> */}
                           <li>
                             Enter Amount:{" "}
                             <strong>
@@ -465,14 +465,14 @@ const sendOrderToAPI = async (order: OrderData): Promise<{ success: boolean; ord
                             </strong>
                           </li>
                           <li>Enter your M-Pesa PIN</li>
-                          <li>Copy the transaction code below</li>
+                          <li>Copy and paste the transaction code below</li>
                         </ol>
                       </div>
 
                       <div className="grid grid-cols-2 gap-4 bg-gray-50 p-4 rounded-lg">
                         <div>
                           <div className="text-xs text-gray-600 mb-1">
-                            Paybill Number
+                            Till Number
                           </div>
                           <div className="flex items-center justify-between">
                             <div className="font-bold text-gray-900">
@@ -494,7 +494,7 @@ const sendOrderToAPI = async (order: OrderData): Promise<{ success: boolean; ord
                         </div>
                         <div>
                           <div className="text-xs text-gray-600 mb-1">
-                            Account Number
+                            Order Number
                           </div>
                           <div className="flex items-center justify-between">
                             <div className="font-bold text-gray-900">

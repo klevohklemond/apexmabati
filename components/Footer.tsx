@@ -135,7 +135,7 @@ export function Footer() {
             </form>
 
             {/* Social Media Links */}
-            <div className="flex items-center justify-center gap-6 mb-12">
+            {/* <div className="flex items-center justify-center gap-6 mb-12">
               {socialLinks.map((social: any) => (
                 <Link
                   key={social.name}
@@ -148,7 +148,7 @@ export function Footer() {
                   {social.icon}
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Divider Line */}
@@ -179,8 +179,9 @@ export function Footer() {
             {/* Footer Links and Copyright */}
             <div className="flex flex-col items-center lg:items-start gap-4">
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 text-sm text-gray-600">
-                <span>© 2025, Apex beyond Mabati</span>
-                {footerLinks.map((link, index) => (
+                <span>© 2026, Apex beyond Mabati</span>
+                <span>Email: info@apexmabati.com</span>
+                {/* {footerLinks.map((link, index) => (
                   <span key={link.name} className="flex items-center gap-2">
                     <span>·</span>
                     <Link
@@ -190,7 +191,7 @@ export function Footer() {
                       {link.name}
                     </Link>
                   </span>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>

@@ -30,28 +30,6 @@ export default function Home() {
 
             <FeaturedProductsCarousel featuredProducts={featuredProducts} />
           </div>
-
-          {/* As Featured on Citizen TV Banner */}
-          <div className="text-black mb-12 mt-25">
-            <div className="mb-6">
-              <h3 className="text-2xl font-normal mb-2">
-                As Featured on Citizen TV
-              </h3>
-              <p className="text-lg text-gray-500">
-                Apex beyond Mabati showcased for quality roofing solutions in
-                Kenya.
-              </p>
-            </div>
-            <div className="w-full">
-              <iframe
-                className="w-full h-[1000px]"
-                src="https://www.youtube.com/embed/TZ_nVFpHYoA"
-                title="Apex beyond Mabati on Citizen TV"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -256,43 +234,8 @@ export default function Home() {
 
       <BlogPosts blogs={blogPosts} title="Blog posts" />
 
-      {/* Discover Apex beyond Mabati */}
-      <section className="bg-gray-100 py-16">
-        <div className="max-w-9xl">
-          <div className="mb-12 px-4 md:px-12 lg:px-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-gray-800 mb-4 max-w-7xl">
-              Discover Apex beyond Mabati: Our Commitment to Quality Roofing
-              Solutions
-            </h2>
-          </div>
-
-          {/* Video Container */}
-          <div className="relative w-full h-[100vh] overflow-hidden shadow-2xl">
-            <video
-              className="w-full h-full object-cover"
-              playsInline
-              loop
-              controls
-              preload="metadata"
-              poster="https://www.royalmabati.com/cdn/shop/files/preview_images/trusses-1-1_1100x.jpg?v=1718572782"
-            >
-              <source
-                src="https://www.royalmabati.com/cdn/shop/videos/c/vp/78df1e3008314f5daf55762d5c8c5c0d/78df1e3008314f5daf55762d5c8c5c0d.HD-1080p-3.3Mbps-30520303.mp4?v=0"
-                type="video/mp4"
-              />
-              {/* Fallback image for browsers that don't support video */}
-              <img
-                src="https://www.royalmabati.com/cdn/shop/files/preview_images/trusses-1-1_1100x.jpg?v=1718572782"
-                alt="Apex beyond Mabati Trusses"
-                className="w-full h-full object-cover"
-              />
-            </video>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials */}
-      <CustomerTestimonials />
+      {/* <CustomerTestimonials /> */}
     </div>
   );
 }

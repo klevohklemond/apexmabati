@@ -24,16 +24,6 @@ export function TrustedQuality() {
           </p>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <button className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors shadow-md">
-            Register Warranty
-          </button>
-          <button className="px-8 py-3 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition-colors shadow-md">
-            Register Claim
-          </button>
-        </div>
-
         {/* Why Unmatched Section */}
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="text-center mb-8">
