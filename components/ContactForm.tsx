@@ -96,7 +96,7 @@ export function ContactForm() {
           <p className="text-gray-600 text-xl mt-6">
             We value your feedback. To help us enhance our service, please{" "}
             <Link
-              href="https://docs.google.com/forms/d/e/1FAIpQLSe4pQMkamb4-Nel2lmm7EsVjOi6vESF37lnvi_7k4IAzO0-9A/viewform?usp=publish-editor"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdLDcoCWj_Nqc_l1OtaaEv3ZayIkPUh7YuaaECOp1w2qvmHtQ/viewform?usp=publish-editor"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:text-blue-600 underline font-medium"
